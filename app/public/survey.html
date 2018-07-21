@@ -6,6 +6,8 @@
     <title>Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -13,23 +15,40 @@
         <div clas="row">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Survey Questions</h5>
+                    <h5 class="card-title">Tell us about you!</h5>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input class="form-control form-control-lg user-name" type="text" placeholder="Enter Your Name Here">
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-control form-control-lg user-photo" type="text" placeholder="Put a link to your photo here">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div clas="row">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Survey Questions</h5>
+                        </div>
+                    </div>
+                </div>
                 <div class="card">
                     <div class="card-body">
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">You enjoy spending Friday nights out with a large group of friends</label>
                             <div class="col-md-4">
-                                <select class="form-control" id="">
-                                    <option>1 (Strongly Agree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Completely Disagree)</option>
+                                <select class="form-control" id="q1">
+                                    <option value="1">1 (Strongly Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Completely Disagree)</option>
                                 </select>
                             </div>
                         </div>
@@ -38,12 +57,12 @@
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">You enjoy meeting new people</label>
                             <div class="col-md-4">
-                                <select class="form-control" id="">
-                                    <option>1 (Strongly Agree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Completely Disagree)</option>
+                                <select class="form-control" id="q2">
+                                    <option value="1">1 (Strongly Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Completely Disagree)</option>
                                 </select>
                             </div>
                         </div>
@@ -52,12 +71,12 @@
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">You enjoy excersize and the outdoors</label>
                             <div class="col-md-4">
-                                <select class="form-control" id="">
-                                    <option>1 (Strongly Agree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Completely Disagree)</option>
+                                <select class="form-control" id="q3">
+                                    <option value="1">1 (Strongly Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Completely Disagree)</option>
                                 </select>
                             </div>
                         </div>
@@ -66,12 +85,12 @@
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">You are a free spririt</label>
                             <div class="col-md-4">
-                                <select class="form-control" id="">
-                                    <option>1 (Strongly Agree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Completely Disagree)</option>
+                                <select class="form-control" id="q4">
+                                    <option value="1">1 (Strongly Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Completely Disagree)</option>
                                 </select>
                             </div>
                         </div>
@@ -80,12 +99,12 @@
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">When someone around you is negative you find it hard to be around them</label>
                             <div class="col-md-4">
-                                <select class="form-control" id="">
-                                    <option>1 (Strongly Agree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Completely Disagree)</option>
+                                <select class="form-control" id="q5">
+                                    <option value="1">1 (Strongly Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Completely Disagree)</option>
                                 </select>
                             </div>
                         </div>
@@ -94,12 +113,12 @@
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">You enjoy being spontaneous</label>
                             <div class="col-md-4">
-                                <select class="form-control" id="">
-                                    <option>1 (Strongly Agree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Completely Disagree)</option>
+                                <select class="form-control" id="q6">
+                                    <option value="1">1 (Strongly Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Completely Disagree)</option>
                                 </select>
                             </div>
                         </div>
@@ -108,12 +127,12 @@
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">You don't feel a need for the approval of others</label>
                             <div class="col-md-4">
-                                <select class="form-control" id="">
-                                    <option>1 (Strongly Agree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Completely Disagree)</option>
+                                <select class="form-control" id="q7">
+                                    <option value="1">1 (Strongly Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Completely Disagree)</option>
                                 </select>
                             </div>
                         </div>
@@ -122,12 +141,12 @@
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">You would prefer not to talk to people face to face</label>
                             <div class="col-md-4">
-                                <select class="form-control" id="">
-                                    <option>1 (Strongly Agree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Completely Disagree)</option>
+                                <select class="form-control" id="q8">
+                                    <option value="1">1 (Strongly Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Completely Disagree)</option>
                                 </select>
                             </div>
                         </div>
@@ -136,12 +155,12 @@
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">You would prefer a single best friend over many friends.</label>
                             <div class="col-md-4">
-                                <select class="form-control" id="">
-                                    <option>1 (Strongly Agree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Completely Disagree)</option>
+                                <select class="form-control" id="q9">
+                                    <option value="1">1 (Strongly Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Completely Disagree)</option>
                                 </select>
                             </div>
                         </div>
@@ -150,22 +169,25 @@
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">You am artistic</label>
                             <div class="col-md-4">
-                                <select class="form-control" id="">
-                                    <option>1 (Strongly Agree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Completely Disagree)</option>
+                                <select class="form-control" id="q10">
+                                    <option value="1">1 (Strongly Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Completely Disagree)</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <input class="btn btn-primary" type="submit" value="Submit">
+                        <input class="btn btn-primary submit" type="submit" value="Submit">
                     </div>
+                    <br><br><br>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row">
         <nav class="navbar navbar-expand-md navbar-dark fixed-bottom bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -183,6 +205,28 @@
             </div>
         </nav>
     </div>
+
 </body>
 
 </html>
+
+<script type="text/javascript">
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+        userResults = []
+        for (i = 1; i < 11; i++) {
+            //get the value of the drop downs selected, make sure they're an integer and then save them in an array
+            userResults.push(parseInt($("#q" + i).val()));
+        }
+
+        // Here we grab the form elements
+        var newFriend = {
+            name: $(".user-name").val().trim(),
+            photo: $(".user-photo").val().trim(),
+            score: userResults
+        };
+
+        console.log(newFriend);
+    });
+</script>
