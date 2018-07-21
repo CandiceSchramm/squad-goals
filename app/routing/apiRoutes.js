@@ -1,10 +1,10 @@
 var path = require("path");
-var users = require("../data/friends");
+var users = require("../data/friends.js");
 
 
 module.exports = function(app) {
     app.get("/api/friends", function(req, res) {
-        // res.json(users)
+        res.json(users)
     })
     app.get("/api/friends/", function(req, res){
         console.log("this is a request");
