@@ -182,7 +182,9 @@
                     <div class="col-md-2">
                         <input class="btn btn-primary submit" type="submit" value="Submit">
                     </div>
-                    <br><br><br>
+                    <br>
+                    <br>
+                    <br>
                 </div>
             </div>
         </div>
@@ -205,7 +207,26 @@
             </div>
         </nav>
     </div>
-
+    <!-- Modal -->
+    <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+        
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                  <h2 id="match-name"></h2>
+                  <img id="match-img" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+        
+            </div>
+          </div>
 </body>
 
 </html>
@@ -218,15 +239,25 @@
         for (i = 1; i < 11; i++) {
             //get the value of the drop downs selected, make sure they're an integer and then save them in an array
             userResults.push(parseInt($("#q" + i).val()));
+            console.log(typeof parseInt($("#q" + i).val()));
         }
 
         // Here we grab the form elements
         var newFriend = {
             name: $(".user-name").val().trim(),
             photo: $(".user-photo").val().trim(),
-            score: userResults
+            scores: userResults
         };
 
         console.log(newFriend);
+
+        $.post("/api/friends", newFriend, function(data){
+            $("#match-name").text(data.name);
+            $("#match-img").attr("src", data.photo);
+  
+            // Show the modal with the best match
+            $("#results-modal").modal("toggle");
+        });
+
     });
 </script>
