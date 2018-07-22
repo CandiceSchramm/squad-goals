@@ -10,10 +10,10 @@ But if you want to host the app yourself, you can find a great Step-by-Step on h
 ## Usage
 
 **Visit the Deployed Site link shown above!**
--You can take the survey by clicking the "Start" button on the homepage, once you've completed the survey the app will display another user who is most similar to you
--To view the API by clicking the "View my API" link at the bottom of the homepage
--To check out my repo in case you need to by clicking "Peek at My Repo!" link at the bottom of the homepage
--Y
+*You can take the survey by clicking the "Start" button on the homepage, once you've completed the survey the app will display another user who is most similar to you
+*To view the API by clicking the "View my API" link at the bottom of the homepage
+*To check out my repo in case you need to by clicking "Peek at My Repo!" link at the bottom of the homepage
+*If you run into issues with the API size or data within, you can reset it by clicking the "Reset all Users" link in the bottom right of the homepage
 
 ## Contributing
 
