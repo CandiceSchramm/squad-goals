@@ -3,9 +3,8 @@
 An app that helps you find friends that are most similar to you!
 
 ## Installation
-There's no installation necessary to view the hosted site on heroku, just visit my deployed site!
+There's no installation necessary to view the hosted site on heroku, just visit my deployed site.
 [Visit my Deployed Site!](https://dry-forest-77032.herokuapp.com/)
--------------
 But if you want to host the app yourself, you can find a great Step-by-Step on how you can host in on heroku by clicking the link to their Step-by-Step
 [Link to Heroku's Step-by-Step](https://devcenter.heroku.com/articles/deploying-nodejs)
 
@@ -27,5 +26,5 @@ But if you want to host the app yourself, you can find a great Step-by-Step on h
 
 
 ## Credits
-**Author & Creator**
+**Author & Creator:**
 [Candice Schramm](https://github.com/CandiceSchramm)
